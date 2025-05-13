@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ОС Світ - ІТ Новини</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>ОС Світ</h1>
+      </div>
+      <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html" class="active">ІТ Новини</a></li>
+          <li><a href="os.html">Операційні Системи</a></li>
+          <li><a href="compare.html">Порівняння</a></li>
+          <li><a href="discussion.html">Обговорення</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h2>ІТ Новини</h2>
+        <p>Останні новини зі світу операційних систем та інформаційних технологій</p>
+      </div>
+    </section>
+
+    <section class="news-list">
+      <div class="container">
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="all">Усі новини</button>
+          <button class="filter-btn" data-filter="windows">Windows</button>
+          <button class="filter-btn" data-filter="macos">macOS</button>
+          <button class="filter-btn" data-filter="linux">Linux</button>
+        </div>
+
+        <div class="news-container">
+          <article class="news-item" id="news1" data-category="windows">
+            <div class="news-date">12 березня 2025</div>
+            <h3>Windows 11 отримує нові функції безпеки</h3>
+            <div class="news-content">
+              <p>Microsoft анонсував нові функції безпеки для Windows 11, включаючи вдосконалений захист від шкідливого ПЗ та фішингу. Оновлення включає нову версію Windows Defender з покращеними алгоритмами виявлення загроз.</p>
+              <p>Серед нових функцій - покращений захист від програм-вимагачів, які шифрують дані користувачів і вимагають викуп, а також вдосконалений моніторинг мережевої активності для виявлення підозрілої поведінки.</p>
+              <p>Оновлення буде доступне для всіх користувачів Windows 11 у наступному місяці. Microsoft також оголосив про плани впровадження шифрування на рівні системи для всіх версій Windows.</p>
+            </div>
+          </article>
+
+          <article class="news-item" id="news2" data-category="macos">
+            <div class="news-date">8 березня 2025</div>
+            <h3>Apple представив macOS 14</h3>
+            <div class="news-content">
+              <p>На щорічній конференції розробників Apple WWDC компанія представила нову версію операційної системи для Mac - macOS 14. Нова ОС пропонує вдосконалений інтерфейс та інтеграцію з штучним інтелектом для підвищення продуктивності.</p>
+              <p>Основні нововведення включають покращену систему повідомлень, розширені можливості для розробників та більш глибоку інтеграцію з іншими пристроями Apple.</p>
+              <p>Особливу увагу Apple приділили підвищенню енергоефективності та продуктивності на новіших моделях Mac з чіпами Apple Silicon. Бета-версія вже доступна для розробників, а повний реліз очікується восени.</p>
+            </div>
+          </article>
+
+          <article class="news-item" id="news3" data-category="linux">
+            <div class="news-date">3 березня 2025</div>
+            <h3>Linux стає популярнішим на ринку України</h3>
+            <div class="news-content">
+              <p>Згідно з останніми дослідженнями, частка ринку Linux в Україні зросла на 15% порівняно з минулим роком. Особливою популярністю користуються дистрибутиви Ubuntu та Linux Mint.</p>
+              <p>Зростання зумовлене декількома факторами, включаючи економічність (відсутність ліцензійних платежів), підвищену безпеку та зростаюче розуміння переваг відкритого програмного забезпечення серед користувачів та підприємств.</p>
+              <p>Дослідження також показало, що все більше освітніх закладів України переходять на Linux як основну операційну систему для навчальних комп'ютерів, що сприяє подальшому зростанню популярності цієї ОС.</p>
+            </div>
+          </article>
+
+          <article class="news-item" data-category="windows">
+            <div class="news-date">25 лютого 2025</div>
+            <h3>Microsoft інтегрує AI-помічника в Windows 11</h3>
+            <div class="news-content">
+              <p>Microsoft оголосив про інтеграцію нового AI-помічника безпосередньо в операційну систему Windows 11. Помічник, який отримав назву "Copilot", зможе виконувати широкий спектр задач - від відповідей на запитання до допомоги в написанні текстів та роботи з документами.</p>
+              <p>На відміну від попередніх асистентів, Copilot має доступ до всіх системних функцій і може керувати налаштуваннями, допомагати з пошуком файлів та оптимізацією системи.</p>
+              <p>За словами представників Microsoft, новий помічник стане "найбільш значним оновленням функціональності Windows за останнє десятиліття".</p>
+            </div>
+          </article>
+
+          <article class="news-item" data-category="linux">
+            <div class="news-date">18 лютого 2025</div>
+            <h3>Вийшов Ubuntu 24.04 LTS</h3>
+            <div class="news-content">
+              <p>Canonical випустила нову версію Ubuntu з довгостроковою підтримкою (LTS) - Ubuntu 24.04. Нова версія отримала кодову назву "Vivid Vulture" і буде підтримуватися протягом 5 років.</p>
+              <p>Серед ключових покращень - оновлене ядро Linux 6.8, новий робочий стіл GNOME 46, покращена підтримка апаратного забезпечення та оптимізації для хмарних сервісів і віртуалізації.</p>
+              <p>Ubuntu 24.04 LTS також пропонує вдосконалений центр програмного забезпечення з більшою кількістю доступних застосунків у форматі Snap, що спрощує встановлення програм для нових користувачів.</p>
+            </div>
+          </article>
+
+          <article class="news-item" data-category="macos">
+            <div class="news-date">10 лютого 2025</div>
+            <h3>Apple покращує безпеку macOS</h3>
+            <div class="news-content">
+              <p>Apple випустила оновлення безпеки для macOS, яке закриває кілька серйозних вразливостей. Оновлення рекомендується встановити всім користувачам якомога швидше.</p>
+              <p>Виправлення стосуються вразливостей в Safari, ядрі системи та кількох системних компонентах, які могли бути використані зловмисниками для віддаленого виконання коду.</p>
+              <p>Крім того, Apple анонсувала нову програму винагород для дослідників безпеки, які знаходять і повідомляють про вразливості в macOS. Розмір винагороди залежить від складності знайденої вразливості і може становити до $1 мільйона.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ОС Світ</h3>
+          <p>Ваш надійний гід у світі операційних систем</p>
+        </div>
+        <div class="footer-section">
+          <h3>Навігація</h3>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="news.html">ІТ Новини</a></li>
+            <li><a href="os.html">Операційні Системи</a></li>
+            <li><a href="compare.html">Порівняння</a></li>
+            <li><a href="discussion.html">Обговорення</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <p>Електронна пошта: info@ossvit.ua</p>
+          <p>Телефон: +380 44 123 4567</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 ОС Світ. Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ОС Світ - Порівняння</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/compare.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>ОС Світ</h1>
+      </div>
+      <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">ІТ Новини</a></li>
+          <li><a href="os.html">Операційні Системи</a></li>
+          <li><a href="compare.html" class="active">Порівняння</a></li>
+          <li><a href="discussion.html">Обговорення</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h2>Порівняння ОС</h2>
+        <p>Перевірте сумісність вашого комп'ютера з різними операційними системами та оберіть найкращу для ваших потреб</p>
+      </div>
+    </section>
+
+    <section class="comparison-tool">
+      <div class="container">
+        <div class="tool-container">
+          <div class="system-specs">
+            <h3>Характеристики вашого ПК</h3>
+            <p>Введіть параметри вашого комп'ютера або натисніть кнопку "Перевірити автоматично"</p>
+            
+            <form id="specs-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cpu">Процесор</label>
+                  <input type="text" id="cpu" name="cpu" placeholder="Наприклад: Intel Core i5-10400">
+                </div>
+                <div class="form-group">
+                  <label for="cpu-speed">Частота процесора (ГГц)</label>
+                  <input type="number" id="cpu-speed" name="cpu-speed" placeholder="2.9" step="0.1" min="0">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ram">Оперативна пам'ять (ГБ)</label>
+                  <input type="number" id="ram" name="ram" placeholder="8" min="1">
+                </div>
+                <div class="form-group">
+                  <label for="storage">Вільне місце на диску (ГБ)</label>
+                  <input type="number" id="storage" name="storage" placeholder="256" min="1">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="gpu">Відеокарта</label>
+                  <input type="text" id="gpu" name="gpu" placeholder="Наприклад: NVIDIA GeForce GTX 1660">
+                </div>
+                <div class="form-group">
+                  <label for="gpu-memory">Пам'ять відеокарти (ГБ)</label>
+                  <input type="number" id="gpu-memory" name="gpu-memory" placeholder="4" min="0" step="0.5">
+                </div>
+              </div>
+              
+              <div class="form-buttons">
+                <button type="button" id="auto-detect" class="btn btn-secondary">Перевірити автоматично</button>
+                <button type="submit" id="compare-btn" class="btn btn-primary">Порівняти з ОС</button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="comparison-results" id="comparison-results">
+            <h3>Результати порівняння</h3>
+            <p class="info-text">Заповніть характеристики вашого ПК і натисніть "Порівняти з ОС" для отримання результатів.</p>
+            
+            <div class="results-container" style="display: none;">
+              <div class="os-compatibility-list">
+                <!-- Compatibility results will be populated here by JavaScript -->
+              </div>
+              
+              <div class="recommendation-section">
+                <h4>Рекомендована операційна система</h4>
+                <div class="recommended-os">
+                  <!-- Recommendation will be populated here by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-table">
+      <div class="container">
+        <h3>Порівняльна таблиця операційних систем</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Параметр</th>
+                <th>Windows 11</th>
+                <th>macOS Ventura</th>
+                <th>Ubuntu 22.04</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Мінімальний процесор</td>
+                <td>1 ГГц, 2+ ядра</td>
+                <td>Apple Silicon / Intel (2017+)</td>
+                <td>2 ГГц dual core</td>
+              </tr>
+              <tr>
+                <td>Мінімальна RAM</td>
+                <td>4 ГБ</td>
+                <td>8 ГБ (рекомендовано)</td>
+                <td>4 ГБ</td>
+              </tr>
+              <tr>
+                <td>Мінімальний простір</td>
+                <td>64 ГБ</td>
+                <td>25 ГБ</td>
+                <td>25 ГБ</td>
+              </tr>
+              <tr>
+                <td>TPM вимоги</td>
+                <td>TPM 2.0</td>
+                <td>Не потрібно</td>
+                <td>Не потрібно</td>
+              </tr>
+              <tr>
+                <td>Доступні редакції</td>
+                <td>Home, Pro, Enterprise</td>
+                <td>Одна версія</td>
+                <td>Desktop, Server</td>
+              </tr>
+              <tr>
+                <td>Ціна</td>
+                <td>від 3500 грн</td>
+                <td>Безкоштовно (для Mac)</td>
+                <td>Безкоштовно</td>
+              </tr>
+              <tr>
+                <td>Період підтримки</td>
+                <td>~5 років</td>
+                <td>~3 років</td>
+                <td>5+ років (LTS)</td>
+              </tr>
+              <tr>
+                <td>Ігрова сумісність</td>
+                <td>Відмінна</td>
+                <td>Середня</td>
+                <td>Середня</td>
+              </tr>
+              <tr>
+                <td>Робота з офісом</td>
+                <td>Відмінна</td>
+                <td>Відмінна</td>
+                <td>Хороша</td>
+              </tr>
+              <tr>
+                <td>Програмування</td>
+                <td>Хороша</td>
+                <td>Відмінна</td>
+                <td>Відмінна</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ОС Світ</h3>
+          <p>Ваш надійний гід у світі операційних систем</p>
+        </div>
+        <div class="footer-section">
+          <h3>Навігація</h3>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="news.html">ІТ Новини</a></li>
+            <li><a href="os.html">Операційні Системи</a></li>
+            <li><a href="compare.html">Порівняння</a></li>
+            <li><a href="discussion.html">Обговорення</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <p>Електронна пошта: info@ossvit.ua</p>
+          <p>Телефон: +380 44 123 4567</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 ОС Світ. Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/compare.js"></script>
+</body>
+</html>
