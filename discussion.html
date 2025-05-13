@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ОС Світ - Обговорення</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/discussion.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>ОС Світ</h1>
+      </div>
+      <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">ІТ Новини</a></li>
+          <li><a href="os.html">Операційні Системи</a></li>
+          <li><a href="compare.html">Порівняння</a></li>
+          <li><a href="discussion.html" class="active">Обговорення</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h2>Обговорення</h2>
+        <p>Спілкуйтеся з іншими користувачами, обмінюйтесь думками та отримуйте відповіді на свої запитання</p>
+      </div>
+    </section>
+
+    <section class="discussion-forum">
+      <div class="container">
+        <div class="forum-container">
+          <div class="forum-categories">
+            <h3>Категорії</h3>
+            <ul class="category-list">
+              <li><a href="#" class="active" data-category="all">Усі теми</a></li>
+              <li><a href="#" data-category="windows">Windows</a></li>
+              <li><a href="#" data-category="macos">macOS</a></li>
+              <li><a href="#" data-category="linux">Linux</a></li>
+              <li><a href="#" data-category="mobile">Мобільні ОС</a></li>
+              <li><a href="#" data-category="other">Інше</a></li>
+            </ul>
+          </div>
+
+          <div class="forum-content">
+            <div class="new-topic-section">
+              <button id="new-topic-btn" class="btn btn-primary">Створити нову тему</button>
+              
+              <div id="new-topic-form" class="new-topic-form">
+                <h3>Створити нову тему</h3>
+                <form id="topic-form">
+                  <div class="form-group">
+                    <label for="topic-title">Назва теми</label>
+                    <input type="text" id="topic-title" name="topic-title" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="topic-category">Категорія</label>
+                    <select id="topic-category" name="topic-category" required>
+                      <option value="">Оберіть категорію</option>
+                      <option value="windows">Windows</option>
+                      <option value="macos">macOS</option>
+                      <option value="linux">Linux</option>
+                      <option value="mobile">Мобільні ОС</option>
+                      <option value="other">Інше</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="topic-content">Повідомлення</label>
+                    <textarea id="topic-content" name="topic-content" rows="6" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="topic-username">Ваше ім'я</label>
+                    <input type="text" id="topic-username" name="topic-username" required>
+                  </div>
+                  <div class="form-buttons">
+                    <button type="button" id="cancel-topic" class="btn btn-secondary">Скасувати</button>
+                    <button type="submit" class="btn btn-primary">Опублікувати</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="topics-list">
+              <div class="topic-item" data-category="windows">
+                <div class="topic-header">
+                  <h3 class="topic-title">Проблеми з оновленням Windows 11</h3>
+                  <span class="topic-category">Windows</span>
+                </div>
+                <div class="topic-meta">
+                  <span class="topic-author">Автор: Олександр</span>
+                  <span class="topic-date">15 березня 2025</span>
+                  <span class="topic-replies">Відповідей: 4</span>
+                </div>
+                <div class="topic-preview">
+                  Після останнього оновлення Windows 11 мій комп'ютер почав гальмувати. Хтось стикався з такою проблемою?
+                </div>
+                <a href="#topic1" class="topic-link">Переглянути</a>
+              </div>
+              
+              <div class="topic-item" data-category="linux">
+                <div class="topic-header">
+                  <h3 class="topic-title">Найкраща версія Linux для початківців</h3>
+                  <span class="topic-category">Linux</span>
+                </div>
+                <div class="topic-meta">
+                  <span class="topic-author">Автор: Марія</span>
+                  <span class="topic-date">10 березня 2025</span>
+                  <span class="topic-replies">Відповідей: 7</span>
+                </div>
+                <div class="topic-preview">
+                  Хочу спробувати Linux, але не знаю, з якого дистрибутива почати. Порадьте щось для новачка.
+                </div>
+                <a href="#topic2" class="topic-link">Переглянути</a>
+              </div>
+              
+              <div class="topic-item" data-category="macos">
+                <div class="topic-header">
+                  <h3 class="topic-title">Чи варто оновлюватись до нової macOS?</h3>
+                  <span class="topic-category">macOS</span>
+                </div>
+                <div class="topic-meta">
+                  <span class="topic-author">Автор: Іван</span>
+                  <span class="topic-date">5 березня 2025</span>
+                  <span class="topic-replies">Відповідей: 3</span>
+                </div>
+                <div class="topic-preview">
+                  Моєму MacBook Pro 5 років. Чи варто оновлюватись до найновішої версії macOS?
+                </div>
+                <a href="#topic3" class="topic-link">Переглянути</a>
+              </div>
+              
+              <div class="topic-item" data-category="mobile">
+                <div class="topic-header">
+                  <h3 class="topic-title">Android vs iOS - що обрати у 2025 році?</h3>
+                  <span class="topic-category">Мобільні ОС</span>
+                </div>
+                <div class="topic-meta">
+                  <span class="topic-author">Автор: Анна</span>
+                  <span class="topic-date">28 лютого 2025</span>
+                  <span class="topic-replies">Відповідей: 12</span>
+                </div>
+                <div class="topic-preview">
+                  Хочу купити новий смартфон і не можу вирішити між iPhone та Android. Які переваги та недоліки у 2025?
+                </div>
+                <a href="#topic4" class="topic-link">Переглянути</a>
+              </div>
+              
+              <div class="topic-item" data-category="other">
+                <div class="topic-header">
+                  <h3 class="topic-title">Майбутнє операційних систем</h3>
+                  <span class="topic-category">Інше</span>
+                </div>
+                <div class="topic-meta">
+                  <span class="topic-author">Автор: Михайло</span>
+                  <span class="topic-date">20 лютого 2025</span>
+                  <span class="topic-replies">Відповідей: 6</span>
+                </div>
+                <div class="topic-preview">
+                  Як ви бачите розвиток операційних систем у наступні 5-10 років? Чи залишаться традиційні ОС актуальними?
+                </div>
+                <a href="#topic5" class="topic-link">Переглянути</a>
+              </div>
+            </div>
+            
+            <!-- Topic detail view (hidden by default) -->
+            <div id="topic-detail" class="topic-detail" style="display: none;">
+              <div class="topic-detail-header">
+                <button id="back-to-topics" class="btn btn-secondary btn-sm">← Повернутися до списку</button>
+                <h3 id="detail-title">Назва теми</h3>
+              </div>
+              
+              <div class="topic-post main-post">
+                <div class="post-author">
+                  <div class="author-avatar"></div>
+                  <div class="author-name" id="detail-author">Ім'я автора</div>
+                  <div class="post-date" id="detail-date">Дата</div>
+                </div>
+                <div class="post-content" id="detail-content">
+                  Зміст повідомлення буде тут...
+                </div>
+              </div>
+              
+              <div class="replies-section">
+                <h4>Відповіді</h4>
+                <div id="replies-list">
+                  <!-- Replies will be populated here by JavaScript -->
+                </div>
+              </div>
+              
+              <div class="reply-form">
+                <h4>Залишити відповідь</h4>
+                <form id="reply-form">
+                  <div class="form-group">
+                    <label for="reply-content">Ваша відповідь</label>
+                    <textarea id="reply-content" name="reply-content" rows="4" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="reply-username">Ваше ім'я</label>
+                    <input type="text" id="reply-username" name="reply-username" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Відправити</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ОС Світ</h3>
+          <p>Ваш надійний гід у світі операційних систем</p>
+        </div>
+        <div class="footer-section">
+          <h3>Навігація</h3>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="news.html">ІТ Новини</a></li>
+            <li><a href="os.html">Операційні Системи</a></li>
+            <li><a href="compare.html">Порівняння</a></li>
+            <li><a href="discussion.html">Обговорення</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <p>Електронна пошта: info@ossvit.ua</p>
+          <p>Телефон: +380 44 123 4567</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 ОС Світ. Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/discussion.js"></script>
+</body>
+</html>

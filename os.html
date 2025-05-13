@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ОС Світ - Операційні Системи</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/os.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>ОС Світ</h1>
+      </div>
+      <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="news.html">ІТ Новини</a></li>
+          <li><a href="os.html" class="active">Операційні Системи</a></li>
+          <li><a href="compare.html">Порівняння</a></li>
+          <li><a href="discussion.html">Обговорення</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="os-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="all">Усі ОС</button>
+          <button class="tab-btn" data-category="desktop">Для ПК</button>
+          <button class="tab-btn" data-category="mobile">Мобільні</button>
+          <button class="tab-btn" data-category="server">Серверні</button>
+        </div>
+
+        <div class="os-list">
+          <!-- Windows Versions -->
+          <div class="os-item" id="windows11" data-category="desktop">
+            <div class="os-header">
+              <h3>Windows 11</h3>
+              <div class="os-type">Комерційна</div>
+            </div>
+          <div class="os-content">
+              <img src="1/windows-11.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Сучасний дизайн з центрованим меню Пуск</li>
+                  <li>Підтримка віджетів</li>
+                  <li>Покращена підтримка для ігор</li>
+                  <li>Інтеграція з Microsoft 365</li>
+                  <li>Підвищені вимоги до системи</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц або швидше з 2+ ядрами</li>
+                  <li>RAM: 4 ГБ</li>
+                  <li>Сховище: 64 ГБ або більше</li>
+                  <li>TPM 2.0</li>
+                  <li>DirectX 12 з WDDM 2.0</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Ціна: від 3500 грн</div>
+                  <a href="#windows-buy" class="btn btn-primary">Купити</a>
+                  <a href="#windows-trial" class="btn btn-secondary">Безкоштовна пробна версія</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="windows10" data-category="desktop">
+            <div class="os-header">
+              <h3>Windows 10</h3>
+              <div class="os-type">Комерційна</div>
+            </div>
+            <div class="os-content">
+              <img src="1/вин10.jpg" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Класичний інтерфейс Windows</li>
+                  <li>Регулярні оновлення безпеки</li>
+                  <li>Підтримка DirectX 12</li>
+                  <li>Інтеграція з Microsoft Store</li>
+                  <li>Сумісність з більшістю програм</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц</li>
+                  <li>RAM: 2 ГБ (32-bit) / 4 ГБ (64-bit)</li>
+                  <li>Сховище: 32 ГБ</li>
+                  <li>DirectX 9 з WDDM 1.0</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Ціна: від 3000 грн</div>
+                  <a href="#windows10-buy" class="btn btn-primary">Купити</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="windows8" data-category="desktop">
+            <div class="os-header">
+              <h3>Windows 8.1</h3>
+              <div class="os-type">Комерційна</div>
+            </div>
+           <div class="os-content">
+              <img src="1/вин8.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Плиточний інтерфейс Metro</li>
+                  <li>Покращена продуктивність</li>
+                  <li>Інтеграція з хмарними сервісами</li>
+                  <li>Підтримка сенсорного керування</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц</li>
+                  <li>RAM: 1 ГБ (32-bit) / 2 ГБ (64-bit)</li>
+                  <li>Сховище: 16 ГБ (32-bit) / 20 ГБ (64-bit)</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Застаріла версія</div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="windows7" data-category="desktop">
+            <div class="os-header">
+              <h3>Windows 7</h3>
+              <div class="os-type">Комерційна (Застаріла)</div>
+            </div>
+            <div class="os-content">
+              <img src="1/вин7.png" alt="Windows 7" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Класичний інтерфейс Windows</li>
+                  <li>Висока стабільність</li>
+                  <li>Широка сумісність з програмами</li>
+                  <li>Підтримка припинена</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц</li>
+                  <li>RAM: 1 ГБ (32-bit) / 2 ГБ (64-bit)</li>
+                  <li>Сховище: 16 ГБ (32-bit) / 20 ГБ (64-bit)</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Не підтримується</div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="windowsxp" data-category="desktop">
+            <div class="os-header">
+              <h3>Windows XP</h3>
+              <div class="os-type">Комерційна (Застаріла)</div>
+            </div>
+           <div class="os-content">
+              <img src="1/винхр.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Легендарний інтерфейс</li>
+                  <li>Низькі системні вимоги</li>
+                  <li>Підтримка застарілого ПЗ</li>
+                  <li>Не рекомендується для сучасного використання</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 233 МГц</li>
+                  <li>RAM: 64 МБ</li>
+                  <li>Сховище: 1.5 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Не підтримується</div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="windowsvista" data-category="desktop">
+            <div class="os-header">
+              <h3>Windows Vista</h3>
+              <div class="os-type">Комерційна (Застаріла)</div>
+            </div>
+           <div class="os-content">
+              <img src="1/винвиста.png" alt="Windows Vista" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Aero інтерфейс</li>
+                  <li>UAC система безпеки</li>
+                  <li>Оновлений медіа-центр</li>
+                  <li>Підтримка припинена</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 800 МГц</li>
+                  <li>RAM: 512 МБ</li>
+                  <li>Сховище: 15 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Не підтримується</div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- macOS Versions -->
+          <div class="os-item" id="macosventura" data-category="desktop">
+            <div class="os-header">
+              <h3>macOS Ventura</h3>
+              <div class="os-type">Комерційна (для Mac)</div>
+            </div>
+            <div class="os-content">
+              <img src="1/macOS.Ventura13.jpg" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Елегантний та інтуїтивний інтерфейс</li>
+                  <li>Відмінна інтеграція з іншими пристроями Apple</li>
+                  <li>Висока безпека та конфіденційність</li>
+                  <li>Режим Stage Manager для організації вікон</li>
+                  <li>Безкоштовні оновлення</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Комп'ютер Mac не старше 2017 року</li>
+                  <li>8 ГБ RAM рекомендовано</li>
+                  <li>Мінімум 25 ГБ вільного місця</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно для власників Mac</div>
+                  <a href="#macos-download" class="btn btn-primary">Завантажити</a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="macosmonterey" data-category="desktop">
+            <div class="os-header">
+              <h3>macOS Monterey</h3>
+              <div class="os-type">Комерційна (для Mac)</div>
+            </div>
+            <div class="os-content">
+              <img src="1/macOS-Monterey.jpg" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Universal Control</li>
+                  <li>Покращені функції FaceTime</li>
+                  <li>Режим фокусування</li>
+                  <li>Shortcuts для Mac</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Комп'ютер Mac не старше 2015 року</li>
+                  <li>8 ГБ RAM рекомендовано</li>
+                  <li>Мінімум 26 ГБ вільного місця</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно для власників Mac</div>
+                  <a href="#macosmonterey-download" class="btn btn-primary">Завантажити</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="macosbigsur" data-category="desktop">
+            <div class="os-header">
+              <h3>macOS Big Sur</h3>
+              <div class="os-type">Комерційна (для Mac)</div>
+            </div>
+            <div class="os-content">
+              <img src="1/macos-big-sur-update-slow.jpg" alt="macos-big-sur" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Оновлений дизайн інтерфейсу</li>
+                  <li>Центр керування</li>
+                  <li>Покращений Safari</li>
+                  <li>Підтримка процесорів M1</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Комп'ютер Mac не старше 2013 року</li>
+                  <li>4 ГБ RAM мінімум</li>
+                  <li>Мінімум 35.5 ГБ вільного місця</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно для власників Mac</div>
+                  <a href="#macosbigsur-download" class="btn btn-primary">Завантажити</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Linux Distributions -->
+          <div class="os-item" id="ubuntu" data-category="desktop server">
+            <div class="os-header">
+              <h3>Ubuntu 22.04 LTS</h3>
+              <div class="os-type">Безкоштовна (Open Source)</div>
+            </div>
+             <div class="os-content">
+              <img src="1/лубунту.png" alt="Ubuntu 22.04 LTS" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Безпечна та стабільна операційна система</li>
+                  <li>Підтримка протягом 5 років (LTS версія)</li>
+                  <li>Робочий стіл GNOME 42</li>
+                  <li>Великий вибір безкоштовного програмного забезпечення</li>
+                  <li>Низькі системні вимоги</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 2 ГГц dual core</li>
+                  <li>RAM: 4 ГБ</li>
+                  <li>Сховище: 25 ГБ</li>
+                  <li>Графіка: 3D-прискорення</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  <a href="#ubuntu-download" class="btn btn-primary">Завантажити</a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="fedora" data-category="desktop">
+            <div class="os-header">
+              <h3>Fedora Workstation</h3>
+              <div class="os-type">Безкоштовна (Open Source)</div>
+            </div>
+            <div class="os-content">
+               <img src="1/федора.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Найновіші технології Linux</li>
+                  <li>GNOME робочий стіл</li>
+                  <li>Відмінна підтримка розробників</li>
+                  <li>Регулярні оновлення</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 2 ГГц dual core</li>
+                  <li>RAM: 4 ГБ</li>
+                  <li>Сховище: 20 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  <a href="#fedora-download" class="btn btn-primary">Завантажити</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="arch" data-category="desktop">
+            <div class="os-header">
+              <h3>Arch Linux</h3>
+              <div class="os-type">Безкоштовна (Open Source)</div>
+            </div>
+            <div class="os-content">
+               <img src="1/Арч.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Мінімалістичний дизайн</li>
+                  <li>Rolling release модель</li>
+                  <li>Повний контроль над системою</li>
+                  <li>Велике спільнота користувачів</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: x86_64</li>
+                  <li>RAM: 512 МБ</li>
+                  <li>Сховище: 2 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  <a href="#arch-download" class="btn btn-primary">Завантажити</a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="manjaro" data-category="desktop">
+            <div class="os-header">
+              <h3>Manjaro</h3>
+              <div class="os-type">Безкоштовна (Open Source)</div>
+            </div>
+            <div class="os-content">
+               <img src="1/моджаролин.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Базується на Arch Linux</li>
+                  <li>Простіша установка</li>
+                  <li>Вибір робочих столів</li>
+                  <li>Дружній до початківців</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц</li>
+                  <li>RAM: 1 ГБ</li>
+                  <li>Сховище: 30 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  <a href="#manjaro-download" class="btn btn-primary">Завантажити</a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile OS -->
+          <div class="os-item" id="android14" data-category="mobile">
+            <div class="os-header">
+              <h3>Android 14</h3>
+              <div class="os-type">Безкоштовна</div>
+            </div>
+           <div class="os-content">
+               <img src="1/андр14.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Покращена конфіденційність</li>
+                  <li>Оптимізація батареї</li>
+                  <li>Нові функції безпеки</li>
+                  <li>Підтримка новітніх технологій</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Залежить від пристрою</li>
+                  <li>Підтримка останніх смартфонів</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="android13" data-category="mobile">
+            <div class="os-header">
+              <h3>Android 13</h3>
+              <div class="os-type">Безкоштовна</div>
+            </div>
+           <div class="os-content">
+               <img src="1/андр13.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Матеріальний дизайн 3</li>
+                  <li>Покращені сповіщення</li>
+                  <li>Нові функції безпеки</li>
+                  <li>Оптимізація продуктивності</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Залежить від пристрою</li>
+                  <li>Підтримка більшості сучасних смартфонів</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Server OS -->
+          <div class="os-item" id="windowsserver2022" data-category="server">
+            <div class="os-header">
+              <h3>Windows Server 2022</h3>
+              <div class="os-type">Комерційна</div>
+            </div>
+           <div class="os-content">
+               <img src="1/винсервер.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Покращені функції безпеки</li>
+                  <li>Підтримка хмарних технологій Azure</li>
+                  <li>Вдосконалені віртуалізація та контейнеризація</li>
+                  <li>Оптимізована продуктивність для серверних навантажень</li>
+                  <li>Інтегровані служби Active Directory</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1.4 ГГц 64-bit</li>
+                  <li>RAM: 512 МБ (мінімум), 2 ГБ (рекомендовано)</li>
+                  <li>Сховище: 32 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Ціна: від 20000 грн</div>
+                  <a href="#server-buy" class="btn btn-primary">Купити</a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="ubuntuserver" data-category="server">
+            <div class="os-header">
+              <h3>Ubuntu Server</h3>
+              <div class="os-type">Безкоштовна (Open Source)</div>
+            </div>
+           <div class="os-content">
+               <img src="1/лубунту.png" alt="Windows 11" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Стабільність та надійність</li>
+                  <li>Підтримка контейнерів</li>
+                  <li>Інтеграція з хмарними сервісами</li>
+                  <li>Регулярні оновлення безпеки</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц</li>
+                  <li>RAM: 512 МБ</li>
+                  <li>Сховище: 2.5 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">Безкоштовно</div>
+                  <a href="#ubuntu-server-download" class="btn btn-primary">Завантажити</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="os-item" id="redhatserver" data-category="server">
+            <div class="os-header">
+              <h3>Red Hat Enterprise Linux</h3>
+              <div class="os-type">Комерційна</div>
+            </div>
+            <div class="os-content">
+               <img src="1/ред.png" alt="win" class="os-image">
+              <div class="os-details">
+                <h4>Особливості</h4>
+                <ul>
+                  <li>Корпоративного рівня підтримка</li>
+                  <li>Висока безпека та стабільність</li>
+                  <li>Сертифікована сумісність</li>
+                  <li>Розширена підтримка контейнерів</li>
+                </ul>
+                
+                <h4>Системні вимоги</h4>
+                <ul>
+                  <li>Процесор: 1 ГГц</li>
+                  <li>RAM: 1 ГБ</li>
+                  <li>Сховище: 10 ГБ</li>
+                </ul>
+                
+                <div class="os-actions">
+                  <div class="price-tag">За підпискою</div>
+                  <a href="#rhel-buy" class="btn btn-primary">Придбати підписку</a>
+                  <a href="#rhel-trial" class="btn btn-secondary">Пробна версія</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ОС Світ</h3>
+          <p>Ваш надійний гід у світі операційних систем</p>
+        </div>
+        <div class="footer-section">
+          <h3>Навігація</h3>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="news.html">ІТ Новини</a></li>
+            <li><a href="os.html">Операційні Системи</a></li>
+            <li><a href="compare.html">Порівняння</a></li>
+            <li><a href="discussion.html">Обговорення</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <p>Електронна пошта: info@ossvit.ua</p>
+          <p>Телефон: +380 44 123 4567</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 ОС Світ. Всі права захищені.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/os.js"></script>
+</body>
+</html>
